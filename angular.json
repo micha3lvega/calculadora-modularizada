@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "calculadora-modularizada"
+    }
+  },
+  "defaultProject": "calculadora-modularizada",
+  "cli": {
+    "analytics": "48fb0dd7-c8ef-45cd-9d52-be54ab42fc2b"
+  }
 }
