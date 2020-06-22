@@ -1,0 +1,56 @@
+<div class="container">
+  <p-panel header="Calculadora">
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="value1">Valor 1</label>
+      </div>
+      <div class="col-sm-10">
+        <p-inputNumber
+          id="value1"
+          [(ngModel)]="value2"
+          [showButtons]="true"
+          buttonLayout="horizontal"
+          spinnerMode="horizontal"
+          [step]="1"
+          decrementButtonClass="ui-button-danger"
+          incrementButtonClass="ui-button-success"
+          incrementButtonIcon="pi pi-plus"
+          decrementButtonIcon="pi pi-minus"
+        >
+        </p-inputNumber>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <label for="value1">Valor 2</label>
+      </div>
+      <div class="col-sm-10">
+        <p-inputNumber
+          id="value1"
+          [(ngModel)]="value1"
+          [showButtons]="true"
+          buttonLayout="horizontal"
+          spinnerMode="horizontal"
+          [step]="1"
+          decrementButtonClass="ui-button-danger"
+          incrementButtonClass="ui-button-success"
+          incrementButtonIcon="pi pi-plus"
+          decrementButtonIcon="pi pi-minus"
+        >
+        </p-inputNumber>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm text-center">
+        <button
+          pButton
+          type="button"
+          label="Calcular"
+          class="ui-button-rounded"
+          (click)="onCalculate()"
+        ></button>
+      </div>
+    </div>
+  </p-panel>
+</div>
